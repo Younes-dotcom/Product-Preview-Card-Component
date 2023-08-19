@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  padding: 4.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  background-image: url(./images/image-product-mobile.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 21rem;
+}
+
+.content {
+  padding: 1.3rem 2.6rem;
+  width: 100%;
+}
+
+.product-category {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.product-title {
+  font-family: Fraunces;
+  color: hsl(212, 21%, 14%);
+  font-size: 2.7rem;
+  line-height: 1;
+  margin-bottom: 1.2rem;
+}
+
+.product-description {
+  color: hsl(228, 12%, 48%);
+  line-height: 1.6;
+  font-size: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.4rem;
+}
+
+.prices .current {
+  font-size: 3.2rem;
+  color: hsl(158, 36%, 37%);
+  font-family: Fraunces;
+}
+
+.prices .old {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-size: 1.4rem;
+}
+
+.cta-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  padding: 1.2rem 0;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  align-items: center;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background-color: hsl(158, 35%, 29%);
+}
+@media (min-width: 700px) {
+  .card {
+    width: 50rem;
+    flex-direction: row;
+    height: 37.5rem;
+  }
+
+  .image {
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+  }
+
+  .product-title {
+    padding: 0 0.4rem;
+  }
+}
