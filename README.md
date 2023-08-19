@@ -11,7 +11,7 @@ Users should be able to:
 
 ### Links
 
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://younes-dotcom.github.io/Product-Preview-Card-Component/)
 
 ## My process
 
